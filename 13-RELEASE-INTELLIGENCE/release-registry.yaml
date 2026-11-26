@@ -1,0 +1,24 @@
+products:
+  - id: S4HANA_ONPREMISE
+    name: SAP S/4HANA On-Premise
+    versions:
+      - "2023"
+      - "2025"
+
+  - id: S4HANA_PRIVATE_CLOUD
+    name: SAP S/4HANA Cloud Private Edition
+    versions:
+      - "2023"
+      - "2025"
+
+  - id: S4HANA_PUBLIC_CLOUD
+    name: SAP S/4HANA Cloud Public Edition
+    versions:
+      - "2502"
+      - "2508"
+      - "2602"
+
+  - id: ECC
+    name: SAP ECC
+    versions:
+      - ECC_6_EHP8

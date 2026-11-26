@@ -1,0 +1,18 @@
+name: New Business Scenario Proposal
+description: Propose a new SAP functional business scenario or process guide.
+title: "[Scenario]: "
+labels: ["scenario-proposal"]
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Functional Domain
+      placeholder: e.g., Order-to-Cash, Procure-to-Pay, Record-to-Report
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Business Context & Scope
+    validations:
+      required: true

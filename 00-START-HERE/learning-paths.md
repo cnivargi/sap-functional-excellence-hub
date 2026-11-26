@@ -1,0 +1,5 @@
+# Learning Paths
+
+- **Fresher:** `01-ENTERPRISE-STRUCTURE` -> `02-MASTER-DATA` -> Standard O2C/P2P.
+- **Mid-Level Consultant:** `04-GOODS-AND-INVOICE-MOVEMENTS` and `05-CROSS-FUNCTIONAL-INTEGRATION`.
+- **Solution Architect:** `06-SAP-INTEGRATION`, `08-SAP-BTP-AND-AI`, and `13-RELEASE-INTELLIGENCE`.

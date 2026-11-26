@@ -1,0 +1,127 @@
+{
+  "generated_count": 3,
+  "items": [
+    {
+      "id": "ENT-MFG-REF-001",
+      "title": "Reference Manufacturing Enterprise Structure (Apex Industrial Systems)",
+      "scenario_type": "enterprise_structure",
+      "domain": "enterprise-structure",
+      "modules": [
+        "FI",
+        "CO",
+        "SD",
+        "MM",
+        "PP"
+      ],
+      "sap_products": [
+        "S4HANA",
+        "ECC"
+      ],
+      "releases": [
+        "S4HANA_2023",
+        "S4HANA_2025",
+        "ECC_6_EHP8"
+      ],
+      "deployment": [
+        "on-premise",
+        "private-cloud"
+      ],
+      "difficulty": "beginner",
+      "status": "draft",
+      "business_capabilities": [
+        "multinational-manufacturing",
+        "intercompany-operations"
+      ],
+      "dependencies": [],
+      "related_scenarios": [
+        "MD-GOV-MAT-001",
+        "PROC-O2C-IC-001"
+      ],
+      "sources": [],
+      "last_verified": null,
+      "reviewed_by": null,
+      "path": "01-ENTERPRISE-STRUCTURE/examples/manufacturing-enterprise.md"
+    },
+    {
+      "id": "MD-GOV-MAT-001",
+      "title": "Cross-Module Master Data Dependency Matrix",
+      "scenario_type": "master_data",
+      "domain": "master-data",
+      "modules": [
+        "SD",
+        "MM",
+        "FI",
+        "CO"
+      ],
+      "sap_products": [
+        "S4HANA",
+        "ECC"
+      ],
+      "releases": [
+        "S4HANA_2023",
+        "S4HANA_2025",
+        "ECC_6_EHP8"
+      ],
+      "deployment": [
+        "on-premise",
+        "private-cloud"
+      ],
+      "difficulty": "intermediate",
+      "status": "draft",
+      "business_capabilities": [
+        "master-data-governance",
+        "cvi-synchronization"
+      ],
+      "dependencies": [
+        "ENT-MFG-REF-001"
+      ],
+      "related_scenarios": [
+        "PROC-O2C-IC-001"
+      ],
+      "sources": [],
+      "last_verified": null,
+      "reviewed_by": null,
+      "path": "02-MASTER-DATA/master-data-governance/master-data-dependency-matrix.md"
+    },
+    {
+      "id": "PROC-O2C-IC-001",
+      "title": "Intercompany Order-to-Cash (Advanced Intercompany Sales - 5D2)",
+      "scenario_type": "business_process",
+      "domain": "order-to-cash",
+      "modules": [
+        "SD",
+        "MM",
+        "FI",
+        "CO"
+      ],
+      "sap_products": [
+        "S4HANA",
+        "ECC"
+      ],
+      "releases": [
+        "S4HANA_2023",
+        "S4HANA_2025",
+        "ECC_6_EHP8"
+      ],
+      "deployment": [
+        "on-premise",
+        "private-cloud"
+      ],
+      "difficulty": "advanced",
+      "status": "draft",
+      "business_capabilities": [
+        "intercompany-sales",
+        "valuated-stock-in-transit"
+      ],
+      "dependencies": [
+        "ENT-MFG-REF-001",
+        "MD-GOV-MAT-001"
+      ],
+      "related_scenarios": [],
+      "sources": [],
+      "last_verified": null,
+      "reviewed_by": null,
+      "path": "03-BUSINESS-PROCESSES/order-to-cash/intercompany-sales/README.md"
+    }
+  ]
+}

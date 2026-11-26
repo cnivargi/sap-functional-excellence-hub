@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SAP Configuration Reference Schema",
+  "type": "object",
+  "required": [
+    "config_id",
+    "configuration_area",
+    "sap_component",
+    "business_purpose",
+    "status"
+  ],
+  "properties": {
+    "config_id": {
+      "type": "string",
+      "pattern": "^CFG-[A-Z0-9]+-[A-Z0-9]+-[0-9]{3}$"
+    },
+    "configuration_area": {
+      "type": "string"
+    },
+    "sap_component": {
+      "type": "string"
+    },
+    "business_purpose": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "in-review",
+        "reviewed",
+        "deprecated"
+      ]
+    }
+  }
+}

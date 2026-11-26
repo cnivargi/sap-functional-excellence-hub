@@ -1,0 +1,24 @@
+name: Validate SAP Functional Hub Content
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run metadata, reference, and unit test suite
+        run: |
+          python tools/validate_metadata.py
+          python tools/validate_references.py
+          python tools/generate_catalog.py
+          python -m unittest discover -s tests -v

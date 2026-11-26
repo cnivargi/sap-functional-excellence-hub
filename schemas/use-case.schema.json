@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SAP Functional AI Use Case Schema",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "ai_category",
+    "sap_products",
+    "human_approval_required",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^AI-[A-Z0-9]+-[0-9]{3}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "ai_category": {
+      "type": "string",
+      "enum": [
+        "conventional_automation",
+        "predictive_ai",
+        "generative_ai",
+        "agentic_ai"
+      ]
+    },
+    "sap_products": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "human_approval_required": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "in-review",
+        "reviewed",
+        "deprecated"
+      ]
+    }
+  }
+}

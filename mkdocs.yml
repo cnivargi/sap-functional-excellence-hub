@@ -1,0 +1,8 @@
+site_name: SAP Functional Excellence Hub
+site_description: Open-source knowledge engineering platform for SAP functional consultants.
+docs_dir: docs
+theme:
+  name: material
+markdown_extensions:
+  - admonition
+  - tables

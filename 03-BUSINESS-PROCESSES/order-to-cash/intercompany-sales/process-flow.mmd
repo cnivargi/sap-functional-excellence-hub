@@ -1,0 +1,8 @@
+flowchart TD
+    A[External Customer PO to IN01] --> B[Sales Order OR in IN01 / Plant DE10]
+    B --> C[Auto Intercompany PO in IN01 & SO in DE01]
+    C --> D[Plant DE10 Delivery & GI to Delivering VSiT - Mvt 687]
+    D --> E[Incoterm Handover to Selling VSiT - Mvt 683]
+    E --> F[Intercompany Billing IV2 in DE01 & Auto MIRO in IN01]
+    E --> G[Final Transfer to Customer - Mvt 601/685]
+    G --> H[Customer Invoice F2 in IN01 -> ACDOCA]
